@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Optional: Sitemap für Suchmaschinen
+Sitemap: https://drdemirel.at/sitemap.xml
+
+# Keine privaten/technischen Ordner indexieren
+Disallow: /_preview_deploy/
+Disallow: /scripts/

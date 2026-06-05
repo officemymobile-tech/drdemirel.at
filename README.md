@@ -1,17 +1,28 @@
-# drdemirel.at – Aufbau-Seite
+# drdemirel.at – Praxis-Website
 
-Statische Platzhalter-Website für **drdemirel.at**, gehostet über GitHub Pages.
+Statische Website für **Dr. Demirel Kardiologie**, gehostet auf **GitHub Pages**.
 
-## DNS (helloly Zoneneditor)
+Inhalte werden als JSON gepflegt und mit einem Build-Script in `index.html` übernommen. Bearbeitung über **Decap CMS** unter `/admin` (siehe [ADMIN.md](./ADMIN.md)).
 
-Nur diese Einträge für die **Website** anpassen – E-Mail-Einträge (MX, mail.*, SPF, DKIM) unverändert lassen.
+## Entwicklung
+
+```bash
+npm install
+npm run build    # content/*.json → index.html
+npm run dev      # http://localhost:8765
+```
+
+## Deployment
+
+Push auf `main` startet den GitHub-Actions-Workflow (`.github/workflows/deploy.yml`).
+
+Repository → **Settings** → **Pages** → Source: **GitHub Actions**
+
+## DNS (Helloly)
 
 | Name | Typ | Wert |
 |------|-----|------|
-| `@` (drdemirel.at) | A | `185.199.108.153` |
-| `@` | A | `185.199.109.153` |
-| `@` | A | `185.199.110.153` |
-| `@` | A | `185.199.111.153` |
-| `www` | CNAME | `GITHUB_USERNAME.github.io` |
+| `@` | A (4×) | `185.199.108–111.153` |
+| `www` | CNAME | `officemymobile-tech.github.io` |
 
-In GitHub: Repository → Settings → Pages → Custom domain: `drdemirel.at`, HTTPS aktivieren.
+E-Mail-Einträge (MX, mail.*, SPF, DKIM) nicht ändern.

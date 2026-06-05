@@ -1,0 +1,96 @@
+# Decap CMS – drdemirel.at
+# Login: GitHub-Konto mit Schreibrechten auf officemymobile-tech/drdemirel.at
+
+locale: de
+
+backend:
+  name: github
+  repo: officemymobile-tech/drdemirel.at
+  branch: main
+  # OAuth-Proxy (einmalig einrichten, siehe ADMIN.md):
+  # base_url: https://IHR-OAUTH-PROXY.vercel.app
+  # auth_endpoint: auth
+
+# Lokal testen: Terminal 1: npx decap-server | Terminal 2: npm run dev
+# local_backend: true
+
+media_folder: uploads
+public_folder: /uploads
+
+site_url: https://drdemirel.at
+display_url: https://drdemirel.at
+logo_url: /logo-heart.png
+
+collections:
+  - name: einstellungen
+    label: Globale Einstellungen
+    files:
+      - name: settings
+        label: Kontakt & Allgemein
+        file: content/settings.json
+        fields:
+          - { label: Sticky-Leiste (oben), name: sticky_bar, widget: string }
+          - { label: Telefon (Anzeige), name: phone_display, widget: string }
+          - { label: Telefon (tel-Link), name: phone_tel, widget: string, hint: "z. B. +436704041253" }
+          - { label: E-Mail Ordination, name: email_ordination, widget: string }
+          - { label: E-Mail Universität, name: email_university, widget: string }
+          - { label: Adresse, name: address, widget: string }
+          - { label: Google Maps URL, name: maps_url, widget: string }
+          - { label: Termin-Seite URL, name: termin_url, widget: string }
+          - { label: Google Scholar URL, name: google_scholar_url, widget: string }
+          - { label: ORCID URL, name: orcid_url, widget: string }
+          - { label: ORCID ID, name: orcid_id, widget: string }
+
+  - name: startseite
+    label: Startseite (Deutsch)
+    files:
+      - name: home_de
+        label: Inhalte Startseite
+        file: content/de/home.json
+        fields:
+          - { label: Hero-Titel, name: hero_title, widget: string }
+          - { label: Hero-Bild, name: hero_image, widget: image }
+          - { label: Hero Alt-Text, name: hero_image_alt, widget: string }
+          - { label: Logo (Kontaktkarte), name: card_logo, widget: image }
+          - { label: Name (Kontaktkarte), name: card_title, widget: string }
+          - { label: Untertitel, name: card_subtitle, widget: string }
+          - label: Spezialisierungen
+            name: specializations
+            widget: list
+            summary: "{{fields.eintrag}}"
+            field: { label: Eintrag, name: eintrag, widget: string }
+          - { label: Termin-Hinweis, name: appointments_note, widget: string }
+          - { label: Tagline unter Kontaktkarte, name: tagline, widget: text }
+          - label: Warum Wahlarzt?
+            name: benefits
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Überschrift, name: title, widget: string }
+              - { label: Text, name: text, widget: text }
+          - { label: Kosten & Rückerstattung (HTML), name: kosten_html, widget: text }
+          - { label: Über mich – Einleitung, name: about_intro, widget: text }
+          - label: Klinische Schwerpunkte
+            name: clinical_focus
+            widget: list
+            summary: "{{fields.eintrag}}"
+            field: { label: Schwerpunkt, name: eintrag, widget: string }
+          - label: Publikationen (Auswahl)
+            name: publications
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Titel, name: title, widget: string }
+              - { label: Zeitschrift, name: journal, widget: string }
+              - { label: Link, name: link, widget: string }
+              - { label: Link-Text, name: link_label, widget: string, default: DOI }
+          - label: Videos (YouTube)
+            name: videos
+            widget: list
+            summary: "{{fields.label}}"
+            fields:
+              - { label: Bezeichnung, name: label, widget: string }
+              - { label: YouTube Video-ID, name: youtube_id, widget: string, hint: "nur die ID, z. B. thXTtR1g6yk" }
+          - { label: Kontakt – Einleitung, name: contact_intro, widget: text }
+          - { label: Anfahrt-Text, name: anfahrt_text, widget: text }
+

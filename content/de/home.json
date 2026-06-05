@@ -1,0 +1,82 @@
+{
+  "hero_title": "Priv.-Doz. Dr. Caglayan Demirel",
+  "hero_image": "hero-dr-demirel.png",
+  "hero_image_alt": "Priv.-Doz. Dr. Caglayan Demirel – Facharzt für Innere Medizin und Kardiologie",
+  "card_logo": "logo-heart.png",
+  "card_title": "Priv.-Doz. Dr. med. Caglayan Demirel",
+  "card_subtitle": "FA für Innere Medizin und Kardiologie",
+  "specializations": [
+    "Interventionelle und Strukturelle Kardiologie",
+    "Herzkatheterdiagnostik & Behandlung",
+    "Transkatheter-Herzklappentherapien"
+  ],
+  "appointments_note": "Termine nach Vereinbarung",
+  "tagline": "Ihr Kardiologe mit Universitäts- und Forschungshintergrund – in der Wahlarztordination persönlich für Sie da.",
+  "benefits": [
+    {
+      "title": "Universitätsniveau in der Ordination",
+      "text": "Tätigkeit an der Medizinischen Universität Wien und am AKH – Sie profitieren von gleicher Expertise wie in der Universitätsklinik, in ruhiger Ordinationsatmosphäre."
+    },
+    {
+      "title": "Spezialisierung auf Ihr Herz",
+      "text": "Fokus auf interventionelle und strukturelle Kardiologie, TAVI und Herzklappentherapie. Wenige Kardiologen bündeln Klinik, Forschung und Wahlarztbetreuung in diesem Bereich."
+    },
+    {
+      "title": "Direkter Zugang ohne Umwege",
+      "text": "Als Wahlarzt können Sie ohne Überweisung zur kardiologischen Abklärung und Betreuung kommen – schnell und unkompliziert."
+    },
+    {
+      "title": "Zeit und persönliche Betreuung",
+      "text": "In der Ordination steht ausreichend Zeit für Ihre Anamnese, Befundbesprechung und individuelle Beratung im Vordergrund."
+    },
+    {
+      "title": "Wissenschaftlich fundierte Therapie",
+      "text": "Forschung an internationalen Spitzenzeitschriften (u. a. European Heart Journal, JAMA) – Ihre Behandlung basiert auf dem aktuellen Stand der Wissenschaft."
+    },
+    {
+      "title": "Anerkennung für Qualität",
+      "text": "„Researcher of the Month“ der MedUni Wien – Auszeichnung für herausragende wissenschaftliche und klinische Leistung."
+    }
+  ],
+  "kosten_html": "<p><strong>Wie funktioniert die Rückerstattung?</strong><br>Als Wahlarzt rechnet Dr. Demirel direkt mit Ihnen ab. Die Honorarnote können Sie bei Ihrer Krankenkasse einreichen – Sie erhalten je nach Kasse bis zu 80 % des Kassentarifs zurück. Auf Wunsch wird die Honorarnote (elektronisch) an Ihre Krankenkasse übermittelt. Bei Zusatzversicherung mit Wahlarztklausel kann ein weiterer Anteil über die Versicherung abgegolten werden.</p><p><strong>Tarife:</strong> Die Kosten für Erstordination, Folgeordination und Leistungen (z. B. EKG, Herzultraschall) erfahren Sie gerne bei der Terminvereinbarung oder per E-Mail.</p><p><strong>Zahlung:</strong> Bar- und Kartenzahlung in der Ordination.</p><p><strong>Terminabsage:</strong> Termine, die nicht mindestens 24 Stunden im Voraus abgesagt werden, können mit einem pauschalen Ausfallhonorar verrechnet werden.</p>",
+  "about_intro": "Priv.-Doz. DDr. med. Caglayan Demirel ist Facharzt für Innere Medizin mit Additivfach Kardiologie (Schwerpunkt Interventionelle und Strukturelle Kardiologie). Er ist an der Medizinischen Universität Wien und am AKH Wien tätig und betreibt parallel die Wahlarztordination im Gesundheitspark Wien.",
+  "clinical_focus": [
+    "Transkatheter-Aortenklappenimplantation (TAVI)",
+    "Minimal-invasive Herzklappentherapie",
+    "Strukturelle Herzerkrankungen",
+    "Behandlung komplexer Aortenklappenerkrankungen",
+    "Risikostratifizierung und periinterventionelle Komplikationen"
+  ],
+  "publications": [
+    {
+      "title": "Mixed aortic valve disease: Association with paravalvular leak and reduced survival after TAVR",
+      "journal": "Eur Heart J Cardiovasc Imaging. 2024.",
+      "link": "https://doi.org/10.1093/ehjci/jeae005",
+      "link_label": "DOI"
+    },
+    {
+      "title": "Impact of stroke history on procedural cerebrovascular insult probability and long-term outcome after TAVI",
+      "journal": "Eur J Clin Invest. 2024.",
+      "link": "https://doi.org/10.1111/eci.14099",
+      "link_label": "DOI"
+    },
+    {
+      "title": "Risk and Timing of Noncardiac Surgery After Transcatheter Aortic Valve Implantation",
+      "journal": "JAMA Netw Open. 2022.",
+      "link": "https://doi.org/10.1001/jamanetworkopen.2022.20689",
+      "link_label": "DOI"
+    }
+  ],
+  "videos": [
+    {
+      "label": "Vortrag / Video 1",
+      "youtube_id": "thXTtR1g6yk"
+    },
+    {
+      "label": "Vortrag / Video 2",
+      "youtube_id": "I12PMiX5h3E"
+    }
+  ],
+  "contact_intro": "Sie möchten sich kardiologisch abklären oder haben eine Überweisung? In der Wahlarztordination nehmen wir uns Zeit für Sie.",
+  "anfahrt_text": "Straßenbahn 43, 44A (Haltestelle Dornbacher Straße), Straßenbahn 2, 10 (Dornbach). Der Standort Gesundheitspark ist barrierefrei und verfügt über Parkmöglichkeiten (Kurzparkzone)."
+}
