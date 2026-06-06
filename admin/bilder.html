@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Bilder – Dr. Demirel Admin</title>
+    <link rel="stylesheet" href="/admin/admin.css" />
+    <script src="/admin/config.js"></script>
+    <script src="/admin/admin-nav.js" defer></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="head">
+        <p class="eyebrow">Dr. Demirel · drdemirel.at</p>
+        <h1>Bilder austauschen</h1>
+        <p class="lead">JPG, PNG oder WebP — max. 4 MB. Wartezeit ca. 2–3 Minuten.</p>
+      </header>
+
+      <div id="status" class="status hidden" role="status" aria-live="polite"></div>
+      <div class="card" id="imageCards"></div>
+
+      <form class="card">
+        <fieldset>
+          <legend>Passwort</legend>
+          <label class="field"><span>Ordinations-Passwort</span><input type="password" id="password" required /></label>
+        </fieldset>
+      </form>
+    </div>
+    <script src="/admin/bilder.js"></script>
+  </body>
+</html>

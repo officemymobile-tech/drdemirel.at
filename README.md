@@ -2,7 +2,7 @@
 
 Statische Website für **Dr. Demirel Kardiologie**, gehostet auf **GitHub Pages**.
 
-Inhalte werden als JSON gepflegt und mit einem Build-Script in `index.html` übernommen. Bearbeitung über **Decap CMS** unter `/admin` (siehe [ADMIN.md](./ADMIN.md)).
+Inhalte werden als JSON gepflegt und mit einem Build-Script in `index.html` übernommen. Bearbeitung über **Passwort-Admin** unter `/admin` (wie hno-alici.at — siehe [ADMIN.md](./ADMIN.md)).
 
 ## Entwicklung
 

@@ -1,3 +1,24 @@
+// Aktuelles-Dropdown
+(function () {
+  var btn = document.querySelector('.nav-aktuelles-btn');
+  var panel = document.getElementById('aktuelles-panel');
+  var wrap = document.querySelector('.nav-aktuelles-wrap');
+  if (!btn || !panel || !wrap) return;
+
+  btn.addEventListener('click', function (e) {
+    e.stopPropagation();
+    var open = wrap.classList.toggle('is-open');
+    btn.setAttribute('aria-expanded', open);
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!wrap.contains(e.target)) {
+      wrap.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  });
+})();
+
 // Mobile navigation toggle
 (function () {
   var toggle = document.querySelector('.nav-toggle');

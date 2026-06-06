@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Texte bearbeiten – Dr. Demirel Admin</title>
+    <link rel="stylesheet" href="/admin/admin.css" />
+    <script src="/admin/config.js"></script>
+    <script src="/admin/admin-nav.js" defer></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="head">
+        <p class="eyebrow">Dr. Demirel · drdemirel.at</p>
+        <h1>Texte bearbeiten</h1>
+        <p class="lead">Startseite und Kontaktdaten — ohne GitHub, nur mit Passwort.</p>
+      </header>
+
+      <div id="status" class="status hidden" role="status" aria-live="polite"></div>
+
+      <form id="form" class="card">
+        <fieldset>
+          <legend>Kontakt &amp; Leiste oben</legend>
+          <label class="field"><span>Sticky-Leiste</span><input id="sticky_bar" maxlength="500" /></label>
+          <label class="field"><span>Telefon (Anzeige)</span><input id="phone_display" maxlength="80" /></label>
+          <label class="field"><span>Telefon (intern)</span><input id="phone_tel" maxlength="40" placeholder="+436704041253" /></label>
+          <label class="field"><span>E-Mail Ordination</span><input id="email_ordination" maxlength="120" /></label>
+          <label class="field"><span>Adresse</span><input id="address" maxlength="300" /></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Startseite — Hero &amp; Karte</legend>
+          <label class="field"><span>Hero-Titel</span><input id="hero_title" maxlength="200" /></label>
+          <label class="field"><span>Hero Alt-Text</span><input id="hero_image_alt" maxlength="300" /></label>
+          <label class="field"><span>Name (Kontaktkarte)</span><input id="card_title" maxlength="200" /></label>
+          <label class="field"><span>Untertitel</span><input id="card_subtitle" maxlength="200" /></label>
+          <label class="field"><span>Termin-Hinweis</span><input id="appointments_note" maxlength="120" /></label>
+          <label class="field"><span>Tagline</span><textarea id="tagline" rows="2" maxlength="1000"></textarea></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Spezialisierungen (eine Zeile pro Eintrag)</legend>
+          <label class="field"><span>Liste</span><textarea id="specializations" rows="4" placeholder="Zeile 1&#10;Zeile 2"></textarea></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Über mich &amp; Kontakt</legend>
+          <label class="field"><span>Über mich — Einleitung</span><textarea id="about_intro" rows="4" maxlength="3000"></textarea></label>
+          <label class="field"><span>Kontakt — Einleitung</span><textarea id="contact_intro" rows="3" maxlength="2000"></textarea></label>
+          <label class="field"><span>Anfahrt-Text</span><textarea id="anfahrt_text" rows="3" maxlength="2000"></textarea></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Speichern</legend>
+          <label class="field"><span>Ordinations-Passwort</span><input type="password" id="password" required /></label>
+        </fieldset>
+
+        <div class="actions">
+          <button type="submit" class="btn btn-primary" id="saveBtn">Texte veröffentlichen</button>
+        </div>
+      </form>
+    </div>
+    <script src="/admin/inhalte.js"></script>
+  </body>
+</html>

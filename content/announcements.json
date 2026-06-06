@@ -1,0 +1,12 @@
+{
+  "active": false,
+  "variant": "info",
+  "title": { "de": "", "tr": "" },
+  "text": { "de": "", "tr": "" },
+  "link": {
+    "url": "",
+    "label": { "de": "", "tr": "" }
+  },
+  "validUntil": null,
+  "updatedAt": "2026-06-06"
+}

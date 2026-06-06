@@ -8,6 +8,29 @@ const root = path.join(__dirname, '..');
 
 const settings = JSON.parse(fs.readFileSync(path.join(root, 'content/settings.json'), 'utf8'));
 const home = JSON.parse(fs.readFileSync(path.join(root, 'content/de/home.json'), 'utf8'));
+const announcementsPath = path.join(root, 'content/announcements.json');
+const announcements = fs.existsSync(announcementsPath)
+  ? JSON.parse(fs.readFileSync(announcementsPath, 'utf8'))
+  : { active: false };
+
+function esc(s) {
+  return String(s || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function announcementActive(a) {
+  if (!a?.active) return false;
+  if (a.validUntil) {
+    const end = new Date(`${a.validUntil}T23:59:59`);
+    if (!Number.isNaN(end.getTime()) && end < new Date()) return false;
+  }
+  const de = a.title?.de?.trim() || a.text?.de?.trim();
+  const tr = a.title?.tr?.trim() || a.text?.tr?.trim();
+  return Boolean(de || tr);
+}
 
 const listItems = (arr) =>
   (arr || []).map((x) => (typeof x === 'string' ? x : x.eintrag || x.item || Object.values(x)[0]));
@@ -85,6 +108,42 @@ $('#kontakt .contact-block p').each((_, el) => {
 // Tel/mail in contact block
 $('#kontakt a[href^="mailto:"]').attr('href', `mailto:${settings.email_ordination}`).text(settings.email_ordination);
 $('#kontakt a[href^="tel:"]').attr('href', `tel:${settings.phone_tel}`).text(settings.phone_display);
+
+// Mitteilungen / Aktuelles
+if (announcementActive(announcements)) {
+  const variant = ['info', 'warning', 'urgent'].includes(announcements.variant)
+    ? announcements.variant
+    : 'info';
+  const titleDe = announcements.title?.de?.trim() || '';
+  const textDe = announcements.text?.de?.trim() || '';
+  const linkUrl = announcements.link?.url?.trim() || '';
+  const linkLabel = announcements.link?.label?.de?.trim() || '';
+
+  let bannerHtml = `<div class="announcement-inner announcement-${variant}">`;
+  if (titleDe) bannerHtml += `<strong>${esc(titleDe)}</strong> `;
+  if (textDe) bannerHtml += `<span>${esc(textDe)}</span>`;
+  if (linkUrl && linkLabel) {
+    bannerHtml += ` <a href="${esc(linkUrl)}">${esc(linkLabel)}</a>`;
+  }
+  bannerHtml += '</div>';
+
+  $('#announcement-banner').removeAttr('hidden').html(bannerHtml);
+
+  let panelHtml = `<div class="aktuelles-card aktuelles-${variant}">`;
+  if (titleDe) panelHtml += `<p class="aktuelles-title">${esc(titleDe)}</p>`;
+  if (textDe) panelHtml += `<p class="aktuelles-text">${esc(textDe)}</p>`;
+  if (linkUrl && linkLabel) {
+    panelHtml += `<p><a href="${esc(linkUrl)}">${esc(linkLabel)} →</a></p>`;
+  }
+  panelHtml += '</div>';
+
+  $('#aktuelles-panel').removeAttr('hidden').html(panelHtml);
+  $('.nav-aktuelles-dot').removeAttr('hidden');
+} else {
+  $('#aktuelles-panel')
+    .removeAttr('hidden')
+    .html('<p class="aktuelles-empty">Keine aktuellen Mitteilungen.</p>');
+}
 
 fs.writeFileSync(path.join(root, 'index.html'), $.html(), 'utf8');
 console.log('✓ index.html erstellt');

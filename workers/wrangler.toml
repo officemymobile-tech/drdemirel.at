@@ -1,0 +1,7 @@
+name = "drdemirel-cms"
+main = "cms-api.js"
+compatibility_date = "2024-01-01"
+
+[vars]
+GITHUB_OWNER = "officemymobile-tech"
+GITHUB_REPO = "drdemirel.at"

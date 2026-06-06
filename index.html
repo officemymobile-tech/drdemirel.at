@@ -66,6 +66,12 @@
       </nav>
       <nav class="main-nav" aria-label="Hauptnavigation">
         <ul>
+          <li class="nav-aktuelles-wrap">
+            <button type="button" class="nav-aktuelles-btn" aria-expanded="false" aria-haspopup="true">
+              Aktuelles <span class="nav-aktuelles-dot" hidden="" aria-hidden="true"></span>
+            </button>
+            <div class="nav-aktuelles-panel" id="aktuelles-panel"><p class="aktuelles-empty">Keine aktuellen Mitteilungen.</p></div>
+          </li>
           <li><a href="#wahlarzt">Wahlarzt</a></li>
           <li><a href="#warum-wahlarzt">Warum zu uns</a></li>
           <li><a href="#ueber-mich">Über mich</a></li>
@@ -82,6 +88,8 @@
     </div>
   </header>
   </div>
+
+  <div id="announcement-banner" class="announcement-banner" hidden="" role="status" aria-live="polite"></div>
 
   <main>
     <!-- Hero: Kongress-Vortrag Medizinische Universität -->
