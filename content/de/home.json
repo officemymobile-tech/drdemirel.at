@@ -1,10 +1,10 @@
 {
   "hero_title": "Priv.-Doz. Dr. Caglayan Demirel",
   "hero_image": "uploads/heroImage-2026-06-06.jpg",
-  "hero_image_alt": "Priv.-Doz. Dr. Caglayan Demirel  Facharzt für Innere Medizin und Kardiologie",
-  "card_logo": "logo-heart.png",
+  "hero_image_alt": "Priv.-Doz. Dr. Caglayan Demirel  Facharzt fÃ¼r Innere Medizin und Kardiologie",
+  "card_logo": "uploads/cardLogo-2026-06-06.png",
   "card_title": "Priv.-Doz. Dr. med. Caglayan Demirel",
-  "card_subtitle": "Facharzt für Innere Medizin und Kardiologie",
+  "card_subtitle": "Facharzt fÃ¼r Innere Medizin und Kardiologie",
   "specializations": [
     {
       "eintrag": "Interventionelle und strukturelle Kardiologie"
@@ -17,35 +17,35 @@
     }
   ],
   "appointments_note": "Termine nach Vereinbarung",
-  "tagline": "Ihr Kardiologe mit universitärer Expertise und wissenschaftlichem Hintergrund – persönlich für Sie in meiner Wahlarztordination da.",
+  "tagline": "Ihr Kardiologe mit universitÃ¤rer Expertise und wissenschaftlichem Hintergrund â persÃ¶nlich fÃ¼r Sie in meiner Wahlarztordination da.",
   "benefits": [
     {
-      "title": "UniversitÃÂÃÂ¤tsniveau in der Ordination",
-      "text": "TÃÂÃÂ¤tigkeit an der Medizinischen UniversitÃÂÃÂ¤t Wien und am AKH ÃÂ¢ÃÂÃÂ Sie profitieren von gleicher Expertise wie in der UniversitÃÂÃÂ¤tsklinik, in ruhiger OrdinationsatmosphÃÂÃÂ¤re."
+      "title": "UniversitÃÂÃÂÃÂÃÂ¤tsniveau in der Ordination",
+      "text": "TÃÂÃÂÃÂÃÂ¤tigkeit an der Medizinischen UniversitÃÂÃÂÃÂÃÂ¤t Wien und am AKH ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Sie profitieren von gleicher Expertise wie in der UniversitÃÂÃÂÃÂÃÂ¤tsklinik, in ruhiger OrdinationsatmosphÃÂÃÂÃÂÃÂ¤re."
     },
     {
       "title": "Spezialisierung auf Ihr Herz",
-      "text": "Fokus auf interventionelle und strukturelle Kardiologie, TAVI und Herzklappentherapie. Wenige Kardiologen bÃÂÃÂ¼ndeln Klinik, Forschung und Wahlarztbetreuung in diesem Bereich."
+      "text": "Fokus auf interventionelle und strukturelle Kardiologie, TAVI und Herzklappentherapie. Wenige Kardiologen bÃÂÃÂÃÂÃÂ¼ndeln Klinik, Forschung und Wahlarztbetreuung in diesem Bereich."
     },
     {
       "title": "Direkter Zugang ohne Umwege",
-      "text": "Als Wahlarzt kÃÂÃÂ¶nnen Sie ohne ÃÂÃÂberweisung zur kardiologischen AbklÃÂÃÂ¤rung und Betreuung kommen ÃÂ¢ÃÂÃÂ schnell und unkompliziert."
+      "text": "Als Wahlarzt kÃÂÃÂÃÂÃÂ¶nnen Sie ohne ÃÂÃÂÃÂÃÂberweisung zur kardiologischen AbklÃÂÃÂÃÂÃÂ¤rung und Betreuung kommen ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ schnell und unkompliziert."
     },
     {
-      "title": "Zeit und persÃÂÃÂ¶nliche Betreuung",
-      "text": "In der Ordination steht ausreichend Zeit fÃÂÃÂ¼r Ihre Anamnese, Befundbesprechung und individuelle Beratung im Vordergrund."
+      "title": "Zeit und persÃÂÃÂÃÂÃÂ¶nliche Betreuung",
+      "text": "In der Ordination steht ausreichend Zeit fÃÂÃÂÃÂÃÂ¼r Ihre Anamnese, Befundbesprechung und individuelle Beratung im Vordergrund."
     },
     {
       "title": "Wissenschaftlich fundierte Therapie",
-      "text": "Forschung an internationalen Spitzenzeitschriften (u. a. European Heart Journal, JAMA) ÃÂ¢ÃÂÃÂ Ihre Behandlung basiert auf dem aktuellen Stand der Wissenschaft."
+      "text": "Forschung an internationalen Spitzenzeitschriften (u. a. European Heart Journal, JAMA) ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Ihre Behandlung basiert auf dem aktuellen Stand der Wissenschaft."
     },
     {
-      "title": "Anerkennung fÃÂÃÂ¼r QualitÃÂÃÂ¤t",
-      "text": "ÃÂ¢ÃÂÃÂResearcher of the MonthÃÂ¢ÃÂÃÂ der MedUni Wien ÃÂ¢ÃÂÃÂ Auszeichnung fÃÂÃÂ¼r herausragende wissenschaftliche und klinische Leistung."
+      "title": "Anerkennung fÃÂÃÂÃÂÃÂ¼r QualitÃÂÃÂÃÂÃÂ¤t",
+      "text": "ÃÂÃÂ¢ÃÂÃÂÃÂÃÂResearcher of the MonthÃÂÃÂ¢ÃÂÃÂÃÂÃÂ der MedUni Wien ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Auszeichnung fÃÂÃÂÃÂÃÂ¼r herausragende wissenschaftliche und klinische Leistung."
     }
   ],
-  "kosten_html": "<p><strong>Wie funktioniert die RÃÂÃÂ¼ckerstattung?</strong><br>Als Wahlarzt rechnet Dr. Demirel direkt mit Ihnen ab. Die Honorarnote kÃÂÃÂ¶nnen Sie bei Ihrer Krankenkasse einreichen ÃÂ¢ÃÂÃÂ Sie erhalten je nach Kasse bis zu 80 % des Kassentarifs zurÃÂÃÂ¼ck. Auf Wunsch wird die Honorarnote (elektronisch) an Ihre Krankenkasse ÃÂÃÂ¼bermittelt. Bei Zusatzversicherung mit Wahlarztklausel kann ein weiterer Anteil ÃÂÃÂ¼ber die Versicherung abgegolten werden.</p><p><strong>Tarife:</strong> Die Kosten fÃÂÃÂ¼r Erstordination, Folgeordination und Leistungen (z. B. EKG, Herzultraschall) erfahren Sie gerne bei der Terminvereinbarung oder per E-Mail.</p><p><strong>Zahlung:</strong> Bar- und Kartenzahlung in der Ordination.</p><p><strong>Terminabsage:</strong> Termine, die nicht mindestens 24 Stunden im Voraus abgesagt werden, kÃÂÃÂ¶nnen mit einem pauschalen Ausfallhonorar verrechnet werden.</p>",
-  "about_intro": "Priv.-Doz. DDr. med. Caglayan Demirel ist Facharzt für Innere Medizin und Kardiologie mit Spezialisierung auf interventionelle und strukturelle Herzerkrankungen. Als Kardiologe an der Medizinischen Universität Wien und am Universitätsklinikum AKH Wien verbindet er universitäre Spitzenmedizin, wissenschaftliche Expertise und modernste Behandlungsmethoden mit einer persönlichen Betreuung in seiner Wahlarztordination im Gesundheitspark Wien.",
+  "kosten_html": "<p><strong>Wie funktioniert die RÃÂÃÂÃÂÃÂ¼ckerstattung?</strong><br>Als Wahlarzt rechnet Dr. Demirel direkt mit Ihnen ab. Die Honorarnote kÃÂÃÂÃÂÃÂ¶nnen Sie bei Ihrer Krankenkasse einreichen ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Sie erhalten je nach Kasse bis zu 80 % des Kassentarifs zurÃÂÃÂÃÂÃÂ¼ck. Auf Wunsch wird die Honorarnote (elektronisch) an Ihre Krankenkasse ÃÂÃÂÃÂÃÂ¼bermittelt. Bei Zusatzversicherung mit Wahlarztklausel kann ein weiterer Anteil ÃÂÃÂÃÂÃÂ¼ber die Versicherung abgegolten werden.</p><p><strong>Tarife:</strong> Die Kosten fÃÂÃÂÃÂÃÂ¼r Erstordination, Folgeordination und Leistungen (z. B. EKG, Herzultraschall) erfahren Sie gerne bei der Terminvereinbarung oder per E-Mail.</p><p><strong>Zahlung:</strong> Bar- und Kartenzahlung in der Ordination.</p><p><strong>Terminabsage:</strong> Termine, die nicht mindestens 24 Stunden im Voraus abgesagt werden, kÃÂÃÂÃÂÃÂ¶nnen mit einem pauschalen Ausfallhonorar verrechnet werden.</p>",
+  "about_intro": "Priv.-Doz. DDr. med. Caglayan Demirel ist Facharzt fÃ¼r Innere Medizin und Kardiologie mit Spezialisierung auf interventionelle und strukturelle Herzerkrankungen. Als Kardiologe an der Medizinischen UniversitÃ¤t Wien und am UniversitÃ¤tsklinikum AKH Wien verbindet er universitÃ¤re Spitzenmedizin, wissenschaftliche Expertise und modernste Behandlungsmethoden mit einer persÃ¶nlichen Betreuung in seiner Wahlarztordination im Gesundheitspark Wien.",
   "clinical_focus": [
     "Transkatheter-Aortenklappenimplantation (TAVI)",
     "Minimal-invasive Herzklappentherapie",
@@ -83,6 +83,6 @@
       "youtube_id": "I12PMiX5h3E"
     }
   ],
-  "contact_intro": "Kardiologische Abklärung, Vorsorge oder Zweitmeinung – wir nehmen uns Zeit für Ihre Herzgesundheit.",
-  "anfahrt_text": "Öffentliche Anbindung: Straßenbahnlinie 43 sowie Buslinie 44A (Haltestelle Dornbacher Straße) und Straßenbahnlinien 2 und 10 (Haltestelle Dornbach). Der Gesundheitspark Wien ist barrierefrei zugänglich und verfügt über Parkmöglichkeiten in der Kurzparkzone."
+  "contact_intro": "Kardiologische AbklÃ¤rung, Vorsorge oder Zweitmeinung â wir nehmen uns Zeit fÃ¼r Ihre Herzgesundheit.",
+  "anfahrt_text": "Ãffentliche Anbindung: StraÃenbahnlinie 43 sowie Buslinie 44A (Haltestelle Dornbacher StraÃe) und StraÃenbahnlinien 2 und 10 (Haltestelle Dornbach). Der Gesundheitspark Wien ist barrierefrei zugÃ¤nglich und verfÃ¼gt Ã¼ber ParkmÃ¶glichkeiten in der Kurzparkzone."
 }
