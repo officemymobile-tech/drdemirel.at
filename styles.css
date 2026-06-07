@@ -626,13 +626,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 0;
 }
 
 .index-card-logo {
-  max-width: 200px;
+  max-width: none;
   width: 100%;
-  height: auto;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+  object-position: center;
   display: block;
 }
 
@@ -661,11 +664,12 @@ body {
     flex: 0 0 auto;
     min-width: 0;
     width: 100%;
-    padding: 1.5rem 1rem;
+    padding: 0;
   }
 
   .index-card-logo {
-    max-width: 140px;
+    max-width: none;
+    min-height: 220px;
   }
 
   .index-card-right {
