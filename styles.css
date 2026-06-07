@@ -282,7 +282,11 @@ body {
 /* RTL (Arabisch) */
 .page-rtl .header-inner { flex-direction: row-reverse; }
 .page-rtl .main-nav ul { flex-direction: row-reverse; }
-.page-rtl .index-card { flex-direction: row-reverse; }
+.page-rtl .index-card {
+  grid-template-columns: 1fr minmax(260px, 38%);
+}
+.page-rtl .index-card-left { grid-column: 2; }
+.page-rtl .index-card-right { grid-column: 1; }
 .page-rtl .benefit-grid { direction: rtl; }
 .page-rtl .focus-list { padding-left: 0; padding-right: 1.5rem; }
 .page-rtl .index-card-list { padding-left: 0; padding-right: 1.25rem; }
@@ -608,8 +612,8 @@ body {
 }
 
 .index-card {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: minmax(260px, 38%) 1fr;
   min-height: 320px;
   max-width: 900px;
   width: 100%;
@@ -620,22 +624,19 @@ body {
 }
 
 .index-card-left {
-  flex: 0 0 38%;
-  min-width: 280px;
-  background: #2a3540;
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  padding: 0;
+  position: relative;
+  min-height: 100%;
+  background: var(--color-logo);
+  overflow: hidden;
 }
 
 .index-card-logo {
-  max-width: none;
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
-  min-height: 360px;
   object-fit: cover;
-  object-position: center 12%;
+  object-position: center top;
   display: block;
 }
 
@@ -655,27 +656,22 @@ body {
   }
 
   .index-card {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     min-height: auto;
     max-width: 100%;
   }
 
   .index-card-left {
-    flex: 0 0 auto;
-    min-width: 0;
+    aspect-ratio: 5 / 6;
+    min-height: 0;
     width: 100%;
-    padding: 0;
   }
 
   .index-card-logo {
-    max-width: none;
-    min-height: 280px;
-    object-position: center 10%;
+    object-position: center top;
   }
 
   .index-card-right {
-    flex: 1 1 auto;
-    min-width: 0;
     width: 100%;
     padding: 1.25rem 1.25rem 1.5rem;
     overflow-wrap: break-word;
@@ -692,7 +688,11 @@ body {
   }
 
   .page-rtl .index-card {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+  .page-rtl .index-card-left,
+  .page-rtl .index-card-right {
+    grid-column: auto;
   }
   .page-rtl .index-card-list {
     padding-right: 1rem;
