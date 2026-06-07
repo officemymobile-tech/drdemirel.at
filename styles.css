@@ -547,31 +547,33 @@ body {
   }
 }
 
-/* Hero: Dr. Demirel – zentral sichtbar */
+/* Hero: Ordinationsfoto – volle Perspektive sichtbar */
 .hero-platz {
   position: relative;
   width: 100%;
+  min-height: 240px;
   max-height: 70vh;
-  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
-  background: var(--color-slate);
+  background: #e8e6e1;
 }
 
 .hero-platz-img-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 100%;
-  min-height: 320px;
   max-height: 70vh;
 }
 
 .hero-platz-img {
-  width: 100%;
-  height: 100%;
-  min-height: 320px;
-  max-height: 70vh;
-  object-fit: cover;
-  object-position: center 15%;
   display: block;
+  max-width: 100%;
+  max-height: 70vh;
+  width: auto;
+  height: auto;
 }
 
 .hero-platz-overlay {
@@ -650,6 +652,12 @@ body {
 
 /* Mobile: Karte untereinander, kein Overflow */
 @media (max-width: 640px) {
+  .hero-platz,
+  .hero-platz-img-wrap,
+  .hero-platz-img {
+    max-height: 52vh;
+  }
+
   .index-card-wrap {
     padding: 1.25rem var(--spacing-unit);
     min-height: auto;
