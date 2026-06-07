@@ -547,33 +547,24 @@ body {
   }
 }
 
-/* Hero: Ordinationsfoto – volle Perspektive sichtbar */
+/* Hero: Ordinationsfoto – komplettes Original (inkl. Tisch & Laptop) */
 .hero-platz {
   position: relative;
   width: 100%;
-  min-height: 240px;
-  max-height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
   background: #e8e6e1;
+  overflow: hidden;
 }
 
 .hero-platz-img-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
-  max-height: 70vh;
+  line-height: 0;
 }
 
 .hero-platz-img {
   display: block;
-  max-width: 100%;
-  max-height: 70vh;
-  width: auto;
+  width: 100%;
   height: auto;
+  vertical-align: middle;
 }
 
 .hero-platz-overlay {
@@ -581,9 +572,14 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 2rem var(--spacing-unit);
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, transparent 100%);
+  padding: 1rem var(--spacing-unit) 1.25rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.2) 38%, transparent 62%);
   color: var(--color-white);
+  pointer-events: none;
+}
+
+.hero-platz-overlay .container {
+  pointer-events: auto;
 }
 
 .hero-platz-title {
@@ -652,12 +648,6 @@ body {
 
 /* Mobile: Karte untereinander, kein Overflow */
 @media (max-width: 640px) {
-  .hero-platz,
-  .hero-platz-img-wrap,
-  .hero-platz-img {
-    max-height: 52vh;
-  }
-
   .index-card-wrap {
     padding: 1.25rem var(--spacing-unit);
     min-height: auto;
