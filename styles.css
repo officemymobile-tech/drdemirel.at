@@ -23,7 +23,6 @@
   --max-width: 960px;
   --spacing-unit: 1.5rem;
   --radius: 6px;
-  --scroll-offset: 10rem;
 }
 
 /* Herzschlag-Animation für das Logo */
@@ -126,14 +125,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: var(--scroll-offset);
-}
-
-section[id],
-.index-card-wrap[id],
-.hero-platz[id] {
-  scroll-margin-top: var(--scroll-offset);
+  scroll-behavior: auto;
 }
 
 .skip-link {
