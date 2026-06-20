@@ -28,6 +28,10 @@
   var EXTRA = 20;
   var smoothMs = 420;
 
+  function plainUrl() {
+    return location.pathname + location.search;
+  }
+
   function getOffset() {
     var sticky = document.querySelector('.sticky-top');
     return (sticky ? sticky.getBoundingClientRect().height : 0) + EXTRA;
@@ -49,23 +53,44 @@
     scrollToId(id, 'auto');
   }
 
-  function goToHash(hash, smooth) {
-    if (!hash || hash.length < 2) return;
-    var id = decodeURIComponent(hash.slice(1));
+  function setHash(id) {
+    if (history.replaceState) {
+      history.replaceState(null, '', '#' + id);
+    } else {
+      location.hash = id;
+    }
+  }
+
+  function clearHash() {
+    if (history.replaceState) {
+      history.replaceState(null, '', plainUrl());
+    }
+  }
+
+  function goToId(id, smooth) {
     if (!document.getElementById(id)) return;
+
+    clearHash();
+    snapToId(id);
 
     if (smooth) {
       scrollToId(id, 'smooth');
       window.setTimeout(function () {
+        clearHash();
+        snapToId(id);
+        setHash(id);
         snapToId(id);
       }, smoothMs);
-    } else {
-      snapToId(id);
+      return;
     }
 
-    if (history.pushState) {
-      history.pushState(null, '', '#' + id);
-    }
+    setHash(id);
+    snapToId(id);
+  }
+
+  function goToHash(hash, smooth) {
+    if (!hash || hash.length < 2) return;
+    goToId(decodeURIComponent(hash.slice(1)), smooth);
   }
 
   document.addEventListener(
@@ -90,7 +115,7 @@
 
   function handleInitialHash() {
     if (!location.hash) return;
-    snapToId(decodeURIComponent(location.hash.slice(1)));
+    goToHash(location.hash, false);
   }
 
   if (document.readyState === 'complete') {
