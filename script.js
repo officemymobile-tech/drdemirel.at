@@ -41,12 +41,17 @@
     return section.querySelector('h2, h1') || section;
   }
 
+  function applyScrollMargin(el) {
+    el.style.scrollMarginTop = getOffset() + 'px';
+  }
+
   function scrollToId(id, behavior) {
     var section = document.getElementById(id);
     if (!section) return;
     var focus = getScrollTarget(section);
-    var top = window.scrollY + focus.getBoundingClientRect().top - getOffset();
-    window.scrollTo({ top: Math.max(0, top), behavior: behavior || 'auto' });
+    applyScrollMargin(focus);
+    applyScrollMargin(section);
+    focus.scrollIntoView({ block: 'start', behavior: behavior || 'auto' });
   }
 
   function snapToId(id) {
@@ -67,6 +72,13 @@
     }
   }
 
+  function finishScroll(id) {
+    clearHash();
+    snapToId(id);
+    setHash(id);
+    snapToId(id);
+  }
+
   function goToId(id, smooth) {
     if (!document.getElementById(id)) return;
 
@@ -76,16 +88,12 @@
     if (smooth) {
       scrollToId(id, 'smooth');
       window.setTimeout(function () {
-        clearHash();
-        snapToId(id);
-        setHash(id);
-        snapToId(id);
+        finishScroll(id);
       }, smoothMs);
       return;
     }
 
-    setHash(id);
-    snapToId(id);
+    finishScroll(id);
   }
 
   function goToHash(hash, smooth) {
